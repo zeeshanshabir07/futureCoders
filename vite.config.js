@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': '/src',
+      '@': '/src', // This alias works for local development
     },
   },
+  base: '/futureCoders/', // Set this to your GitHub repository name
 });
