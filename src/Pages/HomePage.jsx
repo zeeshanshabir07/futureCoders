@@ -9,7 +9,7 @@ import Header from '../Components/Header';
 
 const HomePage = () => {
   return (
-    <Router>
+    <Router basename="/futureCoders">
       <Header />
       <Routes>
         <Route path="/" element={<Hero />} />

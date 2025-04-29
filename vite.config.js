@@ -5,8 +5,12 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': '/src', // This alias works for local development
+      '@': '/src',
     },
   },
-  base: '/futureCoders/', // Set this to your GitHub repository name
+  server: {
+    hmr: {
+      overlay: false, // Disable the error overlay
+    },
+  },
 });
